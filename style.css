@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+
+}
+
+section{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.baground{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 50px;
+    z-index: 1;
+    filter: blur(8px);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    object-fit: cover;
+
+}
+
+
+.card{
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    z-index: 100;
+    gap: 20px;
+    filter: drop-shadow(5px 5px 15px rgba(159, 159, 159, 0.855));
+}
+
+.input-data{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.usepass input{
+    outline: 1px solid rgb(93, 93, 93);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+.usepass input:hover{
+    filter: drop-shadow(5px 5px 10px rgba(0, 14, 84, 0.355));
+}
+
+.but-login button{
+    border: none;
+    color: white;
+    outline: 1px solid rgb(188, 188, 188);
+    background-color: rgb(0, 153, 255);
+    border-radius: 5px;
+}
+
+.but-login button{
+    height: 35px;
+    width: 130px;
+}
+
+.but-login button:hover{
+    background-color: rgb(66, 179, 255);
+    filter: drop-shadow( 5px 1px 5px rgba(0, 0, 0, 0.359));
+}
+
+.text-register{
+    cursor: pointer;
+    color: rgb(0, 147, 245);
+}
+
+.text-register:hover{
+    color: rgb(0, 117, 195);
+}
+
+.bulat{
+
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgb(255, 251, 218);
+    margin-left: 100px;
+    background-image: url(dark-mode.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+}
+
+.failed{
+    color: red;
+    position: absolute;
+    margin-top: 300px;
+    display:none;
+}
+
